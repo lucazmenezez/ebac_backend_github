@@ -41,7 +41,7 @@ async def fetch_movie_details(session, movie_link):
 
         print(f"✔ {title} | {date} | {rating}")
 
-# ======== Função para buscar a lista de filmes =========
+# ======== Função para buscar a lista de filmes ======
 async def fetch_movies_list(session):
     url = f"{BASE_URL}/chart/moviemeter/"
     async with session.get(url, headers=headers) as response:
